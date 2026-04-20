@@ -73,42 +73,6 @@ sudo rm -f /tmp/engine.sock
 make -C boilerplate ci
 ```
 ---
-## Demo Screenshots
-
-### 1 — Multi-container supervision
-**Caption:** Two containers (alpha and beta) running concurrently under one supervisor process.
-<img width="940" height="379" alt="image" src="https://github.com/user-attachments/assets/831988ab-91a7-4a5f-af47-23cbadc180df" /> <br>
-
-### 2 — Metadata tracking
-**Caption:** Output of `engine ps` showing container ID, host PID, start time, state, soft/hard memory limits, and log path.
-<img width="940" height="678" alt="image" src="https://github.com/user-attachments/assets/6b72e625-dd4f-4d49-b58d-d711356967bc" />
-
-### 3 — Bounded-buffer logging
-**Caption:** Supervisor terminal showing `[producer]` and `[consumer]` thread activity; `engine logs` output showing captured log contents.
-<img width="940" height="464" alt="image" src="https://github.com/user-attachments/assets/8a18f8c9-d8ba-4605-b0e9-dd3e7e603995" />
-
-### 4 — CLI and IPC
-**Caption:** CLI terminal issuing `engine start` with flags; supervisor terminal showing `[supervisor] received command: start` and responding with `OK:` over the UNIX domain socket.<br>
-<img width="487" height="75" alt="image" src="https://github.com/user-attachments/assets/3ec72e50-75df-4afc-bd4e-ef10eba1e835" />
-<img width="1408" height="179" alt="image" src="https://github.com/user-attachments/assets/2f8cfc26-54b3-4ce9-a679-5d6b7a740c3b" />
-
-### 5 — Soft-limit warning
-**Caption:** `dmesg` output showing a soft-limit warning event for a container exceeding its soft memory limit.
-<img width="987" height="155" alt="image" src="https://github.com/user-attachments/assets/b8c1e3ea-1d63-4555-9b8d-55a39aefda3a" />
-
-### 6 — Hard-limit enforcement
-**Caption:** `dmesg` output showing a container killed after exceeding its hard limit; `engine ps` showing state as `hard_limit_killed`.
-<img width="494" height="95" alt="image" src="https://github.com/user-attachments/assets/72143014-4d28-4430-a0c3-42078110a33f" />
-
-### 7 — Scheduling experiment
-**Caption:** Terminal output showing measurable differences between two scheduling configurations.
-<img width="935" height="258" alt="image" src="https://github.com/user-attachments/assets/f33d5c8a-4903-4af4-9042-c0922557436b" />
-
-
-### 8 — Clean teardown
-**Caption:** Supervisor printing `[supervisor] shutting down... done.`; `ps aux` showing no zombie processes.
-<img width="1600" height="332" alt="image" src="https://github.com/user-attachments/assets/79adebab-e1e8-475e-b2f0-2c12f933ac9a" />
-
 
 ## Engineering Analysis
 
