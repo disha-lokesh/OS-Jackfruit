@@ -144,6 +144,9 @@ When a container finishes (e.g., `sleep 3`), the supervisor:
 
 This prevents zombie processes and ensures proper lifecycle management.
 
+<img width="1562" height="869" alt="Screenshot 2026-04-23 094759" src="https://github.com/user-attachments/assets/3ca38e38-9de8-44e7-a514-b56c324daa11" />
+
+
 ---
 
 ### 3. IPC, Threads, and Synchronization
@@ -199,6 +202,9 @@ This ensures:
 * No lost logs
 * No race conditions
 
+<img width="1593" height="461" alt="Screenshot 2026-04-23 095026" src="https://github.com/user-attachments/assets/038e65cf-9a29-455b-9cbd-4b2ccebf09c2" />
+
+
 ---
 
 ### 4. Memory Management and Enforcement
@@ -242,6 +248,13 @@ Why kernel space?
 
 This ensures **accurate and real-time memory control**.
 
+<img width="937" height="379" alt="image" src="https://github.com/user-attachments/assets/f5199bc7-e74e-4ece-96a8-ec6cd6d02eb6" />
+<img width="938" height="826" alt="image" src="https://github.com/user-attachments/assets/2fb60723-017e-4373-9bca-a235b9609d75" />
+<img width="932" height="385" alt="image" src="https://github.com/user-attachments/assets/f5d76c18-66f8-460f-a750-c126d2556001" />
+
+
+
+
 ---
 
 ### 5. Scheduling Behavior
@@ -272,6 +285,9 @@ Linux scheduler balances:
 * **Fairness** → distributes CPU among processes
 * **Responsiveness** → interactive processes remain smooth
 * **Throughput** → maximize total work
+
+<img width="934" height="710" alt="image" src="https://github.com/user-attachments/assets/cf06543e-e76c-4d5e-9322-21bc97533187" />
+<img width="699" height="747" alt="image" src="https://github.com/user-attachments/assets/910453f8-3dc9-4a24-a60a-1e82de8e506d" />
 
 ---
 
@@ -309,6 +325,9 @@ Tasks: multiple running
 ```
 
 ---
+<img width="703" height="140" alt="image" src="https://github.com/user-attachments/assets/9aa8a92d-33e0-42a8-8844-5ee58b6904ed" />
+<img width="707" height="93" alt="image" src="https://github.com/user-attachments/assets/565fa3ad-c0b5-48fc-a4d9-c72b9e729e0d" />
+
 
 ### Analysis
 
